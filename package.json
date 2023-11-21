@@ -1,5 +1,5 @@
 {
-    "name": "pocket-cors-rss-proxy",
+    "name": "smart-cors-rss-proxy",
     "version": "1.1.1",
     "description": "Lightweight CORS proxy.",
     "main": "index.js",
@@ -8,17 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/colelewis/pocket-cors-rss-proxy.git"
+        "url": "git+https://github.com/smartskole/app.git"
     },
     "keywords": [
         "cors"
     ],
-    "author": "Cole Lewis",
+    "author": "Oleg",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/colelewis/pocket-cors-rss-proxy/issues"
-    },
-    "homepage": "https://github.com/colelewis/pocket-cors-rss-proxy#readme",
+    "homepage": "https://github.com/smartskole/app#readme",
     "dependencies": {
         "cors": "^2.8.5",
         "dom-parser": "^0.1.6",
