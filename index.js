@@ -6,7 +6,7 @@ const app = express();
 app.use(cors()); // using cors as middleware
 // app.set("trust proxy", true); // allow grab request IP
 
-const port = 8001; // arbitrary
+const port = 10000; // arbitrary
 app.get("/source/*", (req, res) => {
   fetch(req.params[0])
     .then((res) => res.text()) // get response text from fetching RSS URL
@@ -23,6 +23,6 @@ app.get("/source/*", (req, res) => {
     });
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`CORS RSS proxy running on port ${port}`);
 });
