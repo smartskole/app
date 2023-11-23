@@ -7,6 +7,13 @@ app.use(cors()); // using cors as middleware
 // app.set("trust proxy", true); // allow grab request IP
 
 const port = 10000; // arbitrary
+
+app.get("/_health", function (req, res) {
+  res.json({
+    ok: true,
+  });
+});
+
 app.get("/source/*", (req, res) => {
   fetch(req.params[0])
     .then((res) => res.text()) // get response text from fetching RSS URL
